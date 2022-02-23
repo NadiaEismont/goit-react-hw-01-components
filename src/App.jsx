@@ -1,3 +1,7 @@
+import user from 'DATA/user.json';
+import Profile from 'components/Profile';
+import 'core-js/es';
+
 export const App = () => {
   return (
     <div
