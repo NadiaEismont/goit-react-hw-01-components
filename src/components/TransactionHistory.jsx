@@ -4,7 +4,7 @@ import style from './transactionHistory.module.css';
 export default function TransactionHistory({ items }) {
   return (
     <section className={style.section}>
-      <table class="transaction-history">
+      <table className={style.transactionHistory}>
         <thead>
           <tr>
             <th>Type</th>
@@ -26,3 +26,12 @@ export default function TransactionHistory({ items }) {
     </section>
   );
 }
+TransactionHistory.prototype = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      type: PropTypes.string,
+      amount: PropTypes.string,
+      currency: PropTypes.string,
+    })
+  ).isRequired,
+};

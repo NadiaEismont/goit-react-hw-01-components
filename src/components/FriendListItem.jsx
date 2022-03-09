@@ -9,3 +9,8 @@ export default function FriendListItem({ avatar, name, isOnline }) {
     </li>
   );
 }
+FriendListItem.prototype = {
+  isOnline: PropTypes.bool.isRequired,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};

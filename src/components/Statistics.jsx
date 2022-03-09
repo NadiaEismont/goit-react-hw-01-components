@@ -21,6 +21,7 @@ Statistics.prototype = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string,
+      percentage: PropTypes.number,
     })
   ),
 };
