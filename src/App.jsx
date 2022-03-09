@@ -20,7 +20,7 @@ export const App = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-
+          flexDirection: 'column',
           color: '#010101',
         }}
       >
@@ -33,10 +33,11 @@ export const App = () => {
             stats={user.stats}
           />
         </Section>
+
+        <Section title={"Task-2 'Statistics section'"}>
+          <Statistics title="Upload stats" stats={statistic} />;
+        </Section>
       </div>
-      <Section title={"Task-2 'Statistics section'"}>
-        <Statistics title="Upload stats" stats={statistic} />;
-      </Section>
     </div>
   );
 };
