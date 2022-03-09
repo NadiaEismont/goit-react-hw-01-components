@@ -1,3 +1,6 @@
+ul {
+  padding: 0;
+}
 .profile {
   display: flex;
   flex-direction: column;
@@ -21,26 +24,24 @@
 .avatar {
   border: 3px solid #e9eef3;
   border-radius: 50%;
-
+  width: 145px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .name {
   font-weight: 700;
-  text-transform: uppercase;
-
   margin-bottom: 10px;
 }
 
 .tag {
   margin-bottom: 10px;
-  color: #dbe1e7;
+  color: #828385;
 }
 
 .location {
   margin-bottom: 30px;
-  color: #dbe1e7;
+  color: #828385;
 }
 
 .stats {
