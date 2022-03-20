@@ -5,11 +5,12 @@ export default function FriendList({ friends }) {
   return (
     <section className={style.section}>
       <ul class={style.friendList}>
-        {friends.map(friend => (
+        {friends.map(({ avatar, name, isOnline, id }) => (
           <FriendListItem
-            avatar={friend.avatar}
-            name={friend.name}
-            isOnline={friend.isOnline}
+            avatar={avatar}
+            name={name}
+            isOnline={isOnline}
+            id={id}
           />
         ))}
       </ul>

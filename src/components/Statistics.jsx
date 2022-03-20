@@ -3,13 +3,13 @@ import style from './statistic.module.css';
 export default function Statistics({ title, stats }) {
   return (
     <section className={style.statistics}>
-      <h2 className={style.title}>{title}</h2>
+      {title && <h2 className={style.title}>{title}</h2>}
 
       <ul className={style.statList}>
-        {stats.map(stat => (
-          <li className={style.item}>
-            <span className={style.label}>{stat.label}</span>
-            <span className={style.percentage}>{stat.percentage}%</span>
+        {stats.map(({ label, percentage, id }) => (
+          <li key={id} className={style.item}>
+            <span className={style.label}>{label}</span>
+            <span className={style.percentage}>{percentage}%</span>
           </li>
         ))}
       </ul>
